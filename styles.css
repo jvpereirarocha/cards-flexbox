@@ -1,0 +1,98 @@
+:root {
+    --bg-gray: #d3d3d3;
+    --bg-primary: #0275d8;
+    --bg-success: #5cb85c;
+    --bg-inverse: #292b2c;
+    --bg-light: #f7f7f7;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-weight: 500;
+    font-size: 10px;
+    font-family: cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 4rem;
+    background-color: var(--bg-light);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: stretch;
+    flex: 0 0 40rem;
+    border-radius: 5px;
+    box-shadow: 3px 2px 16px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    transition: all .1s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5%);
+}
+
+.card-header {
+    margin-bottom: 2rem;
+}
+
+.card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20rem;
+}
+
+.card-body > * {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+.card-footer {
+    margin-top: 5rem;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.btn-success {
+    background-color: var(--bg-success);
+}
